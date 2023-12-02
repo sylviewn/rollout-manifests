@@ -1,10 +1,10 @@
 node {
     def app
     
-    env.IMAGE = 'ooghenekaro/argo-rollout-bluegreen'
+    env.IMAGE = 'sylviewette/bluegreen-rolloout-oct'
 
     stage('Clone repository') {
-             git branch: 'main', url: 'https://github.com/ooghenekaro/rollout-manifests.git'  
+             git branch: 'main', url: 'https://github.com/sylviewn/rollout-manifests.git'  
     }
 
     stage('Update GIT') {
